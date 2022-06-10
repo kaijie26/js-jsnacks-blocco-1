@@ -2,7 +2,7 @@
 // Chiedi per 6 volte all’utente di inserire un numero,
 // se è dispari inseriscilo nell’array.
 // Creo l'array vuoto
-const array = [];
+const userOddNumbers = [];
 
 // Creo il loop 6 volte
 for(let i = 1; i <= 6; i++) {
@@ -16,12 +16,11 @@ for(let i = 1; i <= 6; i++) {
     // È dispari allora lo inserisco nell' array altrimneti
     // Non inserisco il numero e lascio l'array vuoto come in partenza
     if(singleNumber % 2 !== 0){
-        array.push(singleNumber);
+        userOddNumbers.push(singleNumber);
     }else{
-        array.push();
+        userOddNumbers.push();
     }
     
-
 }
 // Stampo in console
-console.log(array);
+console.log(userOddNumbers);
